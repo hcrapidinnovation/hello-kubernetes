@@ -43,7 +43,7 @@ helm install --create-namespace --namespace hello-kubernetes custom-message ./he
 kubectl get svc hello-kubernetes-custom-message -n hello-kubernetes -o 'jsonpath={ .status.loadBalancer.ingress[0].ip }'
 ```
 
-### Example 3: Ingress
+### Example 3: Ingress    
 
 Deploy the `hello-kubernetes` app into the `hello-kubernetes` namespace. This example assumes that an ingress has been deployed and configured in the cluster, and that the ingress has a path of `/app/hello-kubernetes/` mapped to the `hello-kubernetes` service.
 
